@@ -1,3 +1,4 @@
+import 'package:codepur/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,17 +6,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Center(
-            child: Text("Catalog App",)),
+            child: Text(
+          "Catalog App",
+        )),
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to 30 days of flutter") ,
+          child: Text("Welcome to 30 days of flutter"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

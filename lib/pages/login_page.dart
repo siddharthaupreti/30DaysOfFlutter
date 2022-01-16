@@ -79,11 +79,10 @@ class _LoginPageState extends State<LoginPage> {
                             hintText: "enter password", labelText: "password"),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Password = cannot be empty";
+                            return "Password cannot be empty";
                           } else if (value.length < 6) {
                             return "Password length should be at least 6";
                           }
-
                           return null;
                         },
                       ),
@@ -118,17 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                                   changeButton ? 200 : 8)),
                         ),
                       ),
-
-                      // ElevatedButton(
-                      //   onPressed: () {
-                      //     Navigator.pushNamed(context, MyRoutes.homeRoute);
-                      //   },
-                      //   child: const Text(
-                      //     "Login",
-                      //   ),
-                      //   style: TextButton.styleFrom(
-                      //       minimumSize: const Size(150, 30)),
-                      // )
                     ],
                   ),
                 ),
